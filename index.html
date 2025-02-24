@@ -31,15 +31,17 @@
     ::selection {
       background: var(--selection-bg);
     }
-    #filter-boxes-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      position: absolute;
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
+#filter-boxes-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 10px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
     }
     .filter-box {
       border: 0.7px solid #888;
@@ -197,14 +199,15 @@
     }
 
     function getRandomColor() {
-      return `hsl(${Math.floor(Math.random() * 360)}, 100%, 18%)`;
-    }
+  return `hsl(${Math.floor(Math.random() * 360)}, 100%, 18%)`;
+}
+document.documentElement.style.setProperty("--selection-bg", getRandomColor());
 
-    document.addEventListener("selectionchange", () => {
-      if (window.getSelection().toString().length > 0) {
-        document.documentElement.style.setProperty("--selection-bg", getRandomColor());
-      }
-    });
+document.addEventListener("selectionchange", () => {
+  if (window.getSelection().toString().length > 0) {
+    document.documentElement.style.setProperty("--selection-bg", getComputedStyle(document.documentElement).getPropertyValue("--selection-bg"));
+  }
+});
 
     const measureSpan = document.createElement('span');
     measureSpan.style.visibility = 'hidden';
@@ -219,7 +222,7 @@
     function processInput(input) {
       return input.replace(/I/g, 'ı')
                   .toLowerCase()
-                  .replace(/[^a-zçğıöşüėŋ]/g, '');
+                  .replace(/[^a-zçğıöşüėŋ ]/g, '');
     }
 
     function updateGhostAsterisk() {
@@ -236,17 +239,17 @@
     }
 
     function searchWord() {
-      const query = searchInput.value.replace('*', '').toLowerCase().trim();
-      const results = document.getElementById('results');
-      results.innerHTML = '';
-      if (query === '') return;
-      
-      let count = 0;
-      Object.keys(dictionary).forEach(word => {
-        if (excludedFilters.includes(dictionary[word].file)) return;
-        
-        let searchField = searchByMeaning ? dictionary[word].meaning.toLowerCase() : word.toLowerCase();
-        if (searchField.includes(query) && count < 50) {
+  const query = searchInput.value.replace('*', '').toLowerCase(); // Removed .trim()
+  const results = document.getElementById('results');
+  results.innerHTML = '';
+  if (query === '') return;
+  
+  let count = 0;
+  Object.keys(dictionary).forEach(word => {
+    if (excludedFilters.includes(dictionary[word].file)) return;
+    
+    let searchField = searchByMeaning ? dictionary[word].meaning.toLowerCase() : word.toLowerCase();
+    if (searchField.includes(query) && count < 50) {
           const li = document.createElement('li');
           li.classList.add('word-item');
           li.innerHTML = `
