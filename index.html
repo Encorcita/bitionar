@@ -58,8 +58,9 @@
       transition: background-color 0.2s;
       cursor: pointer;
     }
-    .filter-box:active {
-      background-color: #3a3e41;
+    .filter-box:hover {
+  background-color: #3a3e41;
+}
     }
     .filter-box span.material-symbols-outlined {
       margin-left: 5px;
@@ -239,7 +240,7 @@ document.addEventListener("selectionchange", () => {
     }
 
     function searchWord() {
-  const query = searchInput.value.replace('*', '').toLowerCase(); // Removed .trim()
+  const query = searchInput.value.replace('*', '').toLowerCase();
   const results = document.getElementById('results');
   results.innerHTML = '';
   if (query === '') return;
