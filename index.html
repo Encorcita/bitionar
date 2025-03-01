@@ -33,18 +33,44 @@
     ::selection {
       background: var(--selection-bg);
     }
-#filter-boxes-container {
+    #filter-boxes-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
   gap: 10px;
-  position: absolute;
-  top: 20px;
+  width: 100%;
+  max-width: 800px;
+  position: fixed;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
-    }
+  background: #121212;
+  padding: 10px;
+  z-index: 1000;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOutScale {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
     .filter-box {
       border: 0.7px solid #888;
       color: white;
@@ -59,6 +85,7 @@
       min-width: 30px;
       transition: background-color 0.2s;
       cursor: pointer;
+      animation: fadeInScale 0.3s ease-out;
     }
     .filter-box:hover {
   background-color: #3a3e41;
@@ -188,20 +215,27 @@
 
     const searchInput = document.getElementById('search');
 
-    async function loadDictionary() {
-      for (const file of files) {
-        const response = await fetch(`vocabulary/${file.name}`);
-        const text = await response.text();
-        text.split('\n').forEach(line => {
-          let [word, meaning] = line.split(':');
-          if (word && meaning) {
-            dictionary[word.trim()] = { meaning: meaning.trim(), color: file.color, file: file.name };
-          }
+async function loadDictionary() {
+  for (const file of files) {
+    const response = await fetch(`vocabulary/${file.name}`);
+    const text = await response.text();
+    text.split('\n').forEach(line => {
+      let [word, meaning] = line.split(':');
+      if (word && meaning) {
+        const key = word.trim() + ':';
+        if (!dictionary[key]) {
+          dictionary[key] = [];
+        }
+        dictionary[key].push({
+          meaning: meaning.trim(),
+          color: file.color,
+          file: file.name
         });
       }
-      dictionary = Object.fromEntries(Object.entries(dictionary).sort());
-    }
-
+    });
+  }
+  dictionary = Object.fromEntries(Object.entries(dictionary).sort());
+}
     function getRandomColor() {
   return `hsl(${Math.floor(Math.random() * 360)}, 100%, 18%)`;
 }
@@ -226,7 +260,7 @@ document.addEventListener("selectionchange", () => {
     function processInput(input) {
       return input.replace(/I/g, 'ı')
                   .toLowerCase()
-                  .replace(/[^a-zçğıöşüėŋ ]/g, '');
+                  .replace(/[^a-zçğı:;,-öşüėŋ ]/g, '');
     }
 
     function updateGhostAsterisk() {
@@ -250,28 +284,30 @@ document.addEventListener("selectionchange", () => {
   
   let count = 0;
   Object.keys(dictionary).forEach(word => {
-    if (excludedFilters.includes(dictionary[word].file)) return;
-    
-    let searchField = searchByMeaning ? dictionary[word].meaning.toLowerCase() : word.toLowerCase();
-    if (searchField.includes(query) && count < 50) {
-          const li = document.createElement('li');
-          li.classList.add('word-item');
-          li.innerHTML = `
-              <span class='dot ${dictionary[word].color}'></span>
-              <span class='text-content'><b>${word}</b> ${dictionary[word].meaning}</span>
-          `;
-          li.addEventListener('click', () => {
-            if (!excludedFilters.includes(dictionary[word].file)) {
-              excludedFilters.push(dictionary[word].file);
-              addFilterBox(dictionary[word].file);
-              searchWord();
-            }
-          });
-          results.appendChild(li);
-          count++;
-        }
-      });
-    }
+    dictionary[word].forEach(entry => {
+      if (excludedFilters.includes(entry.file)) return;
+      
+      let searchField = searchByMeaning ? entry.meaning.toLowerCase() : word.toLowerCase();
+      if (searchField.includes(query) && count < 50) {
+        const li = document.createElement('li');
+        li.classList.add('word-item');
+        li.innerHTML = `
+          <span class='dot ${entry.color}'></span>
+          <span class='text-content'><b>${word}</b> ${entry.meaning}</span>
+        `;
+        li.addEventListener('click', () => {
+          if (!excludedFilters.includes(entry.file)) {
+            excludedFilters.push(entry.file);
+            addFilterBox(entry.file);
+            searchWord();
+          }
+        });
+        results.appendChild(li);
+        count++;
+      }
+    });
+  });
+}
 
     let searchByMeaning = false;
 
@@ -404,22 +440,27 @@ document.addEventListener("selectionchange", () => {
     });
 
     function addFilterBox(fileName) {
-      const container = document.getElementById('filter-boxes-container');
-      const displayName = fileName.split('.')[0];
-      const box = document.createElement('div');
-      box.classList.add('filter-box');
-      box.innerHTML = `<span>${displayName}</span><span class="material-symbols-outlined">close</span>`;
-      box.addEventListener('click', () => {
-        removeFilter(fileName, box);
-      });
-      container.appendChild(box);
-    }
-    function removeFilter(fileName, boxElement) {
-      excludedFilters = excludedFilters.filter(f => f !== fileName);
-      boxElement.remove();
-      searchWord();
-    }
-    
+  const container = document.getElementById('filter-boxes-container');
+  const displayName = fileName.split('.')[0];
+
+  const box = document.createElement('div');
+  box.classList.add('filter-box');
+  box.innerHTML = `<span>${displayName}</span><span class="material-symbols-outlined">close</span>`;
+
+  box.addEventListener('click', () => {
+    removeFilter(fileName, box);
+  });
+
+  container.insertBefore(box, container.firstChild);
+}
+function removeFilter(fileName, boxElement) {
+  boxElement.style.animation = "fadeOutScale 0.3s ease-in";
+  setTimeout(() => {
+    excludedFilters = excludedFilters.filter(f => f !== fileName);
+    boxElement.remove();
+    searchWord();
+  }, 300);
+}
     loadDictionary();
   </script>
 </body>
