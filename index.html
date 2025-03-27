@@ -198,253 +198,250 @@
     <ul id="results"></ul>
   </div>
   <script>
-    let dictionary = {};
-    let excludedFilters = [];
-    const files = [
-      { name: 'DLT.txt', color: 'blue' },
-      { name: 'ET (I).txt', color: 'green' },
-      { name: 'ET (II).txt', color: 'red' },
-      { name: 'ET (III).txt', color: 'yellow' },
-      { name: 'ET (IV).txt', color: 'purple' },
-      { name: 'EDAL.txt', color: 'orange' },
-      { name: 'CC.txt', color: 'pink' }
-    ];
-
-    const searchInput = document.getElementById('search');
-
-    async function loadDictionary() {
-      for (const file of files) {
-        const response = await fetch(`vocabulary/${file.name}`);
-        const text = await response.text();
-        text.split('\n').forEach(line => {
-          let [word, meaning] = line.split(':');
-          if (word && meaning) {
-            const key = word.trim() + ':';
-            if (!dictionary[key]) {
-              dictionary[key] = [];
-            }
-            dictionary[key].push({
-              meaning: meaning.trim(),
-              color: file.color,
-              file: file.name
-            });
-          }
-        });
-      }
-      dictionary = Object.fromEntries(Object.entries(dictionary).sort());
-    }
-
-    function getRandomColor() {
-      return `hsl(${Math.floor(Math.random() * 360)}, 100%, 18%)`;
-    }
-
-    document.documentElement.style.setProperty("--selection-bg", getRandomColor());
-
-    document.addEventListener("selectionchange", () => {
-      if (window.getSelection().toString().length > 0) {
-        document.documentElement.style.setProperty("--selection-bg", getComputedStyle(document.documentElement).getPropertyValue("--selection-bg"));
-      }
-    });
-
-    const measureSpan = document.createElement('span');
-    measureSpan.style.visibility = 'hidden';
-    measureSpan.style.position = 'absolute';
-    measureSpan.style.whiteSpace = 'pre';
-    measureSpan.style.fontSize = window.getComputedStyle(searchInput).fontSize;
-    measureSpan.style.fontFamily = window.getComputedStyle(searchInput).fontFamily;
-    document.body.appendChild(measureSpan);
-
-    let lastValidValue = "";
-
-    function processInput(input) {
-      return input.replace(/I/g, 'ı')
-                  .toLowerCase()
-                  .replace(/[^a-zçğıöşüėŋ ]/g, '');
-    }
-
-    function updateGhostAsterisk() {
-      const ghostAsterisk = document.getElementById('ghost-asterisk');
-      const value = searchInput.value;
-      if (value === "") {
-        ghostAsterisk.style.display = "none";
-        return;
-      }
-      measureSpan.textContent = value;
-      const textWidth = measureSpan.offsetWidth;
-      ghostAsterisk.style.left = (10 + textWidth) + "px";
-      ghostAsterisk.style.display = "block";
-    }
-
-    function normalizeQuery(query) {
-      return query
-        .replace(/e/g, '[eė]')
-        .replace(/n/g, '[nŋ]');
-    }
-
-    function searchWord() {
-      const query = searchInput.value.replace('*', '').toLowerCase();
-      const normalizedQuery = normalizeQuery(query);
-      const results = document.getElementById('results');
-      results.innerHTML = '';
-      if (query === '') return;
+    document.addEventListener("DOMContentLoaded", () => {
+      let dictionary = {};
+      let excludedFilters = [];
+      const files = [
+        { name: 'DLT.txt', color: 'blue' },
+        { name: 'ET (I).txt', color: 'green' },
+        { name: 'ET (II).txt', color: 'red' },
+        { name: 'ET (III).txt', color: 'yellow' },
+        { name: 'ET (IV).txt', color: 'purple' },
+        { name: 'EDAL.txt', color: 'orange' },
+        { name: 'CC.txt', color: 'pink' }
+      ];
       
-      let count = 0;
-      Object.keys(dictionary).forEach(word => {
-        dictionary[word].forEach(entry => {
-          if (excludedFilters.includes(entry.file)) return;
-          let searchField = searchByMeaning ? entry.meaning.toLowerCase() : word.toLowerCase();
-          if (searchField.match(new RegExp(normalizedQuery)) && count < 50) {
-            const li = document.createElement('li');
-            li.classList.add('word-item');
-            li.innerHTML = `
-              <span class='dot ${entry.color}'></span>
-              <span class='text-content'><b>${word}</b> ${entry.meaning}</span>
-            `;
-            li.addEventListener('click', () => {
-              if (!excludedFilters.includes(entry.file)) {
-                excludedFilters.push(entry.file);
-                addFilterBox(entry.file);
-                searchWord();
+      const searchInput = document.getElementById('search');
+      
+      const initialSearchWidth = searchInput.clientWidth;
+      
+      function getMaxChars() {
+        const baseCharWidth = 8;
+        const padding = 20;
+        return Math.floor((initialSearchWidth - padding) / baseCharWidth);
+      }
+      
+      async function loadDictionary() {
+        for (const file of files) {
+          const response = await fetch(`vocabulary/${file.name}`);
+          const text = await response.text();
+          text.split('\n').forEach(line => {
+            let [word, meaning] = line.split(':');
+            if (word && meaning) {
+              const key = word.trim() + ':';
+              if (!dictionary[key]) {
+                dictionary[key] = [];
               }
-            });
-            results.appendChild(li);
-            count++;
-          }
+              dictionary[key].push({
+                meaning: meaning.trim(),
+                color: file.color,
+                file: file.name
+              });
+            }
+          });
+        }
+        dictionary = Object.fromEntries(Object.entries(dictionary).sort());
+      }
+      
+      function getRandomColor() {
+        return `hsl(${Math.floor(Math.random() * 360)}, 100%, 18%)`;
+      }
+      
+      document.documentElement.style.setProperty("--selection-bg", getRandomColor());
+      
+      document.addEventListener("selectionchange", () => {
+        if (window.getSelection().toString().length > 0) {
+          document.documentElement.style.setProperty("--selection-bg", getComputedStyle(document.documentElement).getPropertyValue("--selection-bg"));
+        }
+      });
+      
+      const measureSpan = document.createElement('span');
+      measureSpan.style.visibility = 'hidden';
+      measureSpan.style.position = 'absolute';
+      measureSpan.style.whiteSpace = 'pre';
+      measureSpan.style.fontSize = window.getComputedStyle(searchInput).fontSize;
+      measureSpan.style.fontFamily = window.getComputedStyle(searchInput).fontFamily;
+      document.body.appendChild(measureSpan);
+      
+      let lastValidValue = "";
+      
+      function processInput(input) {
+        return input.replace(/I/g, 'ı')
+                    .toLowerCase()
+                    .replace(/[^a-zçğıöşüėŋ ]/g, '');
+      }
+      
+      function updateGhostAsterisk() {
+        const ghostAsterisk = document.getElementById('ghost-asterisk');
+        const value = searchInput.value;
+        if (value === "") {
+          ghostAsterisk.style.display = "none";
+          return;
+        }
+        measureSpan.textContent = value;
+        const textWidth = measureSpan.offsetWidth;
+        ghostAsterisk.style.left = (10 + textWidth) + "px";
+        ghostAsterisk.style.display = "block";
+      }
+      
+      function normalizeQuery(query) {
+        return query
+          .replace(/e/g, '[eė]')
+          .replace(/n/g, '[nŋ]');
+      }
+      
+      function searchWord() {
+        const query = searchInput.value.replace('*', '').toLowerCase();
+        const normalizedQuery = normalizeQuery(query);
+        const results = document.getElementById('results');
+        results.innerHTML = '';
+        if (query === '') return;
+        
+        let count = 0;
+        Object.keys(dictionary).forEach(word => {
+          dictionary[word].forEach(entry => {
+            if (excludedFilters.includes(entry.file)) return;
+            
+            let searchField = searchByMeaning ? entry.meaning.toLowerCase() : word.toLowerCase();
+            if (searchField.match(new RegExp(normalizedQuery)) && count < 50) {
+              const li = document.createElement('li');
+              li.classList.add('word-item');
+              li.innerHTML = `
+                <span class='dot ${entry.color}'></span>
+                <span class='text-content'><b>${word}</b> ${entry.meaning}</span>
+              `;
+              li.addEventListener('click', () => {
+                if (!excludedFilters.includes(entry.file)) {
+                  excludedFilters.push(entry.file);
+                  addFilterBox(entry.file);
+                  searchWord();
+                }
+              });
+              results.appendChild(li);
+              count++;
+            }
+          });
         });
+      }
+      
+      let searchByMeaning = false;
+
+      searchInput.addEventListener('beforeinput', function(e) {
+        if (e.inputType === 'insertText' && e.data === '*') {
+          e.preventDefault();
+          searchByMeaning = !searchByMeaning;
+          document.getElementById('ghost-asterisk').style.opacity = searchByMeaning ? '1' : '0.5';
+          searchWord();
+        }
       });
-    }
 
-    let searchByMeaning = false;
-
-    searchInput.addEventListener('beforeinput', function(e) {
-      if (e.inputType === 'insertText' && e.data === '*') {
-        e.preventDefault();
-        searchByMeaning = !searchByMeaning;
-        document.getElementById('ghost-asterisk').style.opacity = searchByMeaning ? '1' : '0.5';
+      searchInput.addEventListener('input', function () {
+        const maxChars = getMaxChars();
+        if (this.value.length > maxChars) {
+          this.value = this.value.substring(0, maxChars);
+        }
+        updateGhostAsterisk();
         searchWord();
-      }
-    });
-
-    searchInput.addEventListener('input', function(e) {
-      let processed = processInput(this.value);
-      measureSpan.textContent = processed;
-      const textWidth = measureSpan.offsetWidth;
-      const maxWidth = searchInput.clientWidth - 20;
-      if (textWidth <= maxWidth) {
-        lastValidValue = processed;
-        this.value = processed;
-      } else {
-        this.value = lastValidValue;
-      }
-      updateGhostAsterisk();
-      searchWord();
-    });
-
-    let lastSelectionStart = 0;
-    let lastSelectionEnd = 0;
-
-    searchInput.addEventListener('beforeinput', function(e) {
-      lastSelectionStart = this.selectionStart;
-      lastSelectionEnd = this.selectionEnd;
-      if (e.inputType === 'insertText') {
-        const newValue = this.value.slice(0, this.selectionStart) + e.data + this.value.slice(this.selectionEnd);
-        const processed = processInput(newValue);
+      });
+      
+      let lastSelectionStart = 0;
+      let lastSelectionEnd = 0;
+      
+      searchInput.addEventListener('beforeinput', function(e) {
+        lastSelectionStart = this.selectionStart;
+        lastSelectionEnd = this.selectionEnd;
+      
+        if (e.inputType === 'insertText') {
+          const newValue = this.value.slice(0, this.selectionStart) + e.data + this.value.slice(this.selectionEnd);
+          const processed = processInput(newValue);
+          measureSpan.textContent = processed;
+          const textWidth = measureSpan.offsetWidth;
+          const maxWidth = searchInput.clientWidth - 20;
+          if (textWidth > maxWidth) {
+            e.preventDefault();
+          }
+        }
+      });
+      
+      searchInput.addEventListener('input', function(e) {
+        const processed = processInput(this.value);
         measureSpan.textContent = processed;
         const textWidth = measureSpan.offsetWidth;
         const maxWidth = searchInput.clientWidth - 20;
-        if (textWidth > maxWidth) {
-          e.preventDefault();
+      
+        if (textWidth <= maxWidth) {
+          lastValidValue = processed;
+          this.value = processed;
+        } else {
+          this.value = lastValidValue;
+          this.setSelectionRange(lastSelectionStart, lastSelectionEnd);
         }
-      }
-    });
-
-    searchInput.addEventListener('input', function(e) {
-      const processed = processInput(this.value);
-      measureSpan.textContent = processed;
-      const textWidth = measureSpan.offsetWidth;
-      const maxWidth = searchInput.clientWidth - 20;
-      if (textWidth <= maxWidth) {
-        lastValidValue = processed;
-        this.value = processed;
-      } else {
-        this.value = lastValidValue;
-        this.setSelectionRange(lastSelectionStart, lastSelectionEnd);
-      }
-      updateGhostAsterisk();
-      searchWord();
-    });
-
-    searchInput.addEventListener('beforeinput', function(e) {
-      lastSelectionStart = this.selectionStart;
-      lastSelectionEnd = this.selectionEnd;
-      if (e.inputType === 'insertText' && e.data && e.data !== '*' && processInput(e.data) === '') {
-        e.preventDefault();
-        return;
-      }
-      if (e.inputType === 'insertText') {
-        const newValue = this.value.slice(0, this.selectionStart) + e.data + this.value.slice(this.selectionEnd);
-        const processed = processInput(newValue);
-        measureSpan.textContent = processed;
-        const textWidth = measureSpan.offsetWidth;
-        const maxWidth = searchInput.clientWidth - 20;
-        if (textWidth > maxWidth) {
-          e.preventDefault();
-        }
-      }
-    });
-
-    searchInput.addEventListener('paste', function(e) {
-      e.preventDefault();
-      let pastedText = (e.clipboardData || window.clipboardData).getData('text');
-      let processedPaste = processInput(pastedText);
-      const startPos = this.selectionStart;
-      const endPos = this.selectionEnd;
-      const newValue = this.value.slice(0, startPos) + processedPaste + this.value.slice(endPos);
-      this.value = newValue;
-      lastValidValue = newValue;
-      const newCursorPos = startPos + processedPaste.length;
-      this.setSelectionRange(newCursorPos, newCursorPos);
-      updateGhostAsterisk();
-      searchWord();
-    });
-
-    searchInput.addEventListener('paste', function(e) {
-      e.preventDefault();
-      let pastedText = (e.clipboardData || window.clipboardData).getData('text');
-      let processedPaste = processInput(pastedText);
-      const startPos = this.selectionStart;
-      const endPos = this.selectionEnd;
-      const newValue = this.value.slice(0, startPos) + processedPaste + this.value.slice(endPos);
-      this.value = newValue;
-      lastValidValue = newValue;
-      const newCursorPos = startPos + processedPaste.length;
-      this.setSelectionRange(newCursorPos, newCursorPos);
-      updateGhostAsterisk();
-      searchWord();
-    });
-
-    function addFilterBox(fileName) {
-      const container = document.getElementById('filter-boxes-container');
-      const displayName = fileName.split('.')[0];
-      const box = document.createElement('div');
-      box.classList.add('filter-box');
-      box.innerHTML = `<span>${displayName}</span><span class="material-symbols-outlined">close</span>`;
-      box.addEventListener('click', () => {
-        removeFilter(fileName, box);
-      });
-      container.appendChild(box);
-    }
-
-    function removeFilter(fileName, boxElement) {
-      boxElement.style.animation = "fadeOutScale 0.3s ease-in";
-      setTimeout(() => {
-        excludedFilters = excludedFilters.filter(f => f !== fileName);
-        boxElement.remove();
+        updateGhostAsterisk();
         searchWord();
-      }, 300);
-    }
-
-    loadDictionary();
+      });
+      
+      searchInput.addEventListener('beforeinput', function(e) {
+        lastSelectionStart = this.selectionStart;
+        lastSelectionEnd = this.selectionEnd;
+        
+        if (e.inputType === 'insertText' && e.data && e.data !== '*' && processInput(e.data) === '') {
+          e.preventDefault();
+          return;
+        }
+        
+        if (e.inputType === 'insertText') {
+          const newValue = this.value.slice(0, this.selectionStart) + e.data + this.value.slice(this.selectionEnd);
+          const processed = processInput(newValue);
+          measureSpan.textContent = processed;
+          const textWidth = measureSpan.offsetWidth;
+          const maxWidth = searchInput.clientWidth - 20;
+          if (textWidth > maxWidth) {
+            e.preventDefault();
+          }
+        }
+      });
+      
+      searchInput.addEventListener('paste', function (e) {
+        e.preventDefault();
+        let pastedText = (e.clipboardData || window.clipboardData).getData('text');
+        const maxChars = getMaxChars();
+        const startPos = this.selectionStart;
+        const endPos = this.selectionEnd;
+        let newValue = this.value.slice(0, startPos) + pastedText + this.value.slice(endPos);
+        if (newValue.length > maxChars) {
+          newValue = newValue.substring(0, maxChars);
+        }
+        this.value = newValue;
+        lastValidValue = newValue;
+        const newCursorPos = Math.min(startPos + pastedText.length, maxChars);
+        this.setSelectionRange(newCursorPos, newCursorPos);
+        updateGhostAsterisk();
+        searchWord();
+      });
+      
+      function addFilterBox(fileName) {
+        const container = document.getElementById('filter-boxes-container');
+        const displayName = fileName.split('.')[0];
+        const box = document.createElement('div');
+        box.classList.add('filter-box');
+        box.innerHTML = `<span>${displayName}</span><span class="material-symbols-outlined">close</span>`;
+        box.addEventListener('click', () => {
+          removeFilter(fileName, box);
+        });
+        container.appendChild(box);
+      }
+      
+      function removeFilter(fileName, boxElement) {
+        boxElement.style.animation = "fadeOutScale 0.3s ease-in";
+        setTimeout(() => {
+          excludedFilters = excludedFilters.filter(f => f !== fileName);
+          boxElement.remove();
+          searchWord();
+        }, 300);
+      }
+      
+      loadDictionary();
+    });
   </script>
 </body>
 </html>
