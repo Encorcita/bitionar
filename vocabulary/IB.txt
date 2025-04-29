@@ -1,0 +1,1292 @@
+tensi: tensi (tanrı oğlu)
+men: ben
+yarın: yarın (gündüz)
+keçe: gece
+altun: altın
+örgin: taht
+üze: üzerinde
+olurupan: oturup
+meŋileyür: keyiflenir
+men: ben
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+ala: ala
+atlıg: atlı
+yol: yol
+teŋri: tanrısı
+men: ben
+yarın: yarın (gündüz)
+keçe: gece
+esür: eser (yol sürer)
+men: ben
+otru: karşıda
+eki: iki
+yılıg: yılık (kibar)
+kisi: kişi
+oglın: oğluna
+sokusmıs: sokuşmuş (yanaşmış)
+kisi: kişi
+korkmıs: korkmuş
+korkma: korkma
+timis: demiş
+kut: kut
+birgey: vereyim
+men: ben
+timis: demiş
+ança: anca
+biliŋ: bilin
+edgü: iyi
+ol: o
+altun: altın
+kanatlıg: kanatlı
+talım: talım (yırtıcı)
+kara: kara
+kus: kuş (kartal)
+men: ben
+tanım: tenimin
+tüsi: tüyü
+takı: dahi
+tükemezken: yetişmezken
+taluyda: denizde
+yatıpan: (bulup)
+tapladukumın: topladığımı
+tutar: tutar
+men: ben
+sebdükümin: sevdiğimi
+yiyür: yerim
+men: ben
+antag: öyle
+küçlüg: güçlü
+men: ben
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+ürüŋ: ak
+esri: benekli
+togan: doğan
+kus: kuşu
+men: ben
+çıntan: sandal
+ıgaç: ağacı
+üze: üzerine
+olurupan: oturup
+meŋileyür: keyiflenir
+men: ben
+ança: anca
+biliŋler: bilin
+beg: bey
+er: er (adam)
+yontıŋaru: atlarına
+barmıs: varmış
+ak: ak
+bisi: kısrağı
+kulunlamıs: kulunlamış
+altun: altın
+toyuglug: damgalı
+adgırlık: aygırlık
+yaragay: yaraşır
+tebesiŋerü: devesine
+barmıs: varmış
+ürüŋ: ak
+ingeni: devesi
+botolamıs: yavrulamış
+altun: altın
+budlalıg: burunluklu
+bugralık: buğralık
+yaragay: yaraşır
+ebiŋerü: evine
+kelmis: gelmiş
+üçünç: üçüncü
+konçuyı: eşi
+urılanmıs: oğullamış (doğurmuş)
+beglik: beylik
+yaragay: yaraşır
+tir: der
+meŋilig: mutlu
+beg: bey
+er: er
+ermis: imiş
+añıg: çok
+edgü: iyi
+ol: o
+adıglı: ayılı
+toŋuzlı: domuzlu
+art: geçit
+üze: üze[rinde]
+sokusmıs: sokuşmuş
+ermis: imiş
+adıgıŋ: ayının
+karnı: karnı
+yarılmıs: yarılmış
+toŋuzuŋ: domuzun
+azıgı: azısı (dişi)
+sınmıs: sınmış (kırılmış)
+tir: der
+ança: anca
+biliŋ: bilin
+yablak: yavlak (kötü)
+ol: o
+er: er (adam)
+terkleyü: koşa-
+kelir: gelir
+edgü: iyi
+söz: söz
+sab: sav
+elti: aldı
+kelir: gelır
+tir: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+altun: altın
+baslıg: başlı
+yılan: yılan
+men: ben
+altun: altın
+kurugsakımın: kursağımı
+kılıçın: kılıçla
+kesipen: kesip
+özümin: özümü
+yol: yol (kopar)
+intin: inden
+basımın: başımı
+yol: yol (kopar)
+ebintin: evinden (yuvasından)
+tir: der
+ança: anca
+biliŋler: bilin
+yablak: kötü
+ol: o
+ulug: ulu
+ev: ev
+örtenmis: yanmış
+katıŋa: katına
+tegi: değin
+kalmaduk: kalmadık
+bükiŋe: büküne (köşesine)
+tegi: değin
+kodmaduk: koymadık (tamamı)
+tir: der
+ança: anca
+biliŋler: bilin
+yablak: kötü
+ol: o
+esnegen: esneyen
+bars: pars
+men: ben
+kamus: kamış [lık]
+ara: arasında
+basım: başım
+antag: öyle
+alp: alp
+men: ben
+erdemlig: erdemli
+men: ben
+ança: anca
+biliŋler: bilin
+sarıg: sarı
+atlıg: atlı
+sabçı: savcı (sözcü)
+yazıg: koyu
+atlıg: atlı
+yalavaç: yalavaç (elçi)
+edgü: iyi
+söz: söz
+sab: sav
+elti: aldı
+kelir: gelir
+tir: der
+ança: anca
+biliŋ: bilin
+añıg: pek
+edgü: iyi
+ol: o
+er: er (adam)
+abka: ava
+barmıs: varmış
+tagda: dağda
+kamılmıs: kamılmış (düşmüş)
+teŋride: tanrıda
+erklig: erklik (güç)
+tir: der
+ança: anca (öyle)
+biliŋler: bilin
+yabız: yavuz (çetin/kötü)
+ol: o
+teŋrilig: tanrılık (dindar)
+kurtga: kadın
+yurtta: yurtta (çadırda)
+kalmıs: kalmış
+yaglıg: yağlı
+kamıç: kaşık
+bulupan: bulup
+yalgayu: yalayıp
+tirilmis: dirilmiş
+ölümde: ölümden
+ozmıs: ozmuş (kurtulmuş)
+tir: der
+ança: anca
+biliŋler: bilin
+kuzgunug: kuzgunu
+ıgaçka: ağaca
+bamıs: bağlamış
+katıgtı: katıca (sıkı)
+ba: bağla
+edgüti: iyice
+ba: bağla
+tir: der
+ança: anca
+biliŋler: bilin
+üze: üste
+tuman: duman (sis)
+turdı: durdu
+asra: altta
+toz: toz
+turdı: durdu
+kus: kuş
+oglı: oğlu (yavrusu)
+uça: uça [rak]
+aztı: azmış (yolu şaşırmış)
+keyik: geyik
+oglı: oğlu
+yügürü: koşup
+aztı: azmış
+kisi: kişi
+oglı: oğlu
+yorıyu: yürüyüp
+aztı: azmış
+yana: yine
+teŋri: tanrı
+kutınta: kutunda
+üçünç: üçüncü
+yılta: yılda
+kop: hepsi
+esen: esen
+tükel: salim (sağ-salim)
+körüsmis: görüşmüş
+kop: hep [si]
+ögirer: övünür
+sebinür: sevinir
+tir: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+toruk: doruk (zayıf)
+at: at
+semriti: semiz
+yerin: yer
+öpen: düşleyip
+yügürü: yüğürü (koşa)
+barmıs: varmış
+otru: karşı
+yerde: yerde
+ogrı: hırsız
+sokusup: sokunup
+tutupan: tutup
+minmis: binmiş
+yeliŋe: yelesinden
+kudursugınıŋa: kuyruğuna
+tegi: değin
+yagrıpan: yaralanıp
+kamsayu: kımıldaya-
+umatın: -madan
+turur: durur
+tir: der
+ança: anca
+biliŋ: bilin
+yablak: kötü
+ol: o
+özlük: özlük (binek)
+at: at
+öŋ: kurak
+yerde: yerde
+arıp: arıp (argın-yorgun)
+oŋup: donup
+turu: dura-
+kalmıs: -kalmış
+teŋri: tanrı
+küçiŋe: gücüyle
+tag: dağ
+üze: üzerinde
+yol: yol
+sub: su
+körüpen: görüp
+yıs: bayır
+üze: üzerinde
+yas: yaş
+t: ot ot
+körüpen: görüp
+yorıyu: yürüye
+barıpan: varıp
+sub: su
+içipen: içip
+yas: yaş [ot]
+yepen: yiyip
+ölümde: ölümden
+ozmıs: kurtulmuş
+tir: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+kerekü: çadırın
+içi: içi
+ne: ne
+teg: gibi
+ol: o
+tügünüki: tüynüğü (bacası)
+ne: ne
+teg: gibi
+ol: o
+köznöki: gözneği (penceresi)
+ne: ne
+teg: de
+körüklüg: görkemli
+ol: o
+egni: çatısı
+ne: ne
+teg: dek
+edgü: iyi
+ol: o
+bagısı: bağışı (ipleri)
+ne: ne
+teg: dek (nasıl)
+bar: var
+ol: o
+tir: der
+ança: anca
+biliŋler: bilin
+añıg: pek
+edgü: iyi
+ol: o
+ak: ak
+at: at
+karsısın: karşısını (rakibini)
+üç: üç
+bolugta: aşamada
+talulapan: seçmiş
+agınka: dua
+ötügke: ötmeye (söylemeye)
+ıdmıs: başlamış
+tir: der
+korkma: korkma
+edgüti: iyice
+ötün: ötün (anlat)
+ayınma: ayınma (çekinme)
+edgüti: iyice
+yalvar: yalvar
+tir: der
+ança: anca
+biliŋ: bilin
+edgü: iyi
+ol: o
+titir: erkek
+bugra: deve
+men: ben
+ürüŋ: ak
+köpükümin: köpüğümü
+saçar: saçar
+men: ben
+üze: üstte
+teŋrike: tanrıya (göğe)
+tegir: değer
+asra: altta
+yerke: yere
+kirür: girer[im]
+tir: der
+udıgmag: uyuyanı
+odguru: uyandıra-uyandıra
+yatıglıg: yatanı
+turguru: kaldıra-kaldıra
+yorıyur: yürüyor (yaşıyor)
+men: ben
+antag: öyle
+küçlüg: güçlü
+men: ben
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+karı: yaşlı
+üpgük: çavuşkuşu
+yıl: yıl
+yaru: başla-
+mazkan: -madan
+etdi: öttü
+üdmeŋ: ilgilenmeyin
+körmeŋ: görmeyin
+ürkütmeŋ: ürkütmeyin
+tir: der
+ança: anca
+biliŋ: bilin
+uzuntonlug: uzundonlu (kadın)
+küzŋüsin: aynasını
+kölke: göle
+ıçgınmıs: düşürmüş
+yarın: yarın (gündüz)
+yaŋrayur: mırıldanır
+keçe: gece
+keŋrenür: sızlanır
+ter: der
+ança: anca
+biliŋler: bilin
+muŋlug: kederli
+ol: o
+añıg: çok
+yablak: kötü
+ol: o
+oglan: oğlan
+kekük: kartal
+tezekin: tezeğini
+bultı: buldu
+çekik: çekik[kuşu]
+etiŋ: etin
+kutlug: kutlu
+bolzun: olsun
+ter: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+teglök: kör
+kulun: kulun (tay)
+erkek: erkek
+yunta: atı
+emig: emmeyi
+tileyür: diler
+kün: gün
+ortu: ortası (anasını)
+yütürüp: yitirip
+tün: dün (gece)
+ortu: ortası
+kanta: ne
+negüde: dek (nasıl)
+bulgay: bulacak
+ol: o
+ter: der
+ança: anca
+biliŋler: bilin
+yabız: yavuz (çetin/kötü)
+ol: o
+eki: iki
+öküzüg: öküzü
+bir: bir
+bokursıka: sabana
+kölmis: koşmuş
+kamsayu: kımıldaya-
+umatın: -madan
+turur: durur
+ter: der
+ança: anca
+biliŋ: bilin
+yablak: kötü
+ol: o
+taŋ: tan
+taŋlardı: tanladı
+udu: uyuyan
+yer: yer
+yarudı: parladı
+udu: uyuyan
+kün: gün
+togdı: doğdu
+kamag: herşeyin
+üze: üzeri
+yaruk: parlak
+boltı: oldu
+ter: der
+ança: anca
+biliŋ: bilin
+edgü: iyi
+ol: o
+bay: bar
+er: er (zengin adam)
+koñı: koyunu
+ürküpen: ürküp
+barmis: varmış (kaçmış)
+börike: börüye (kurta)
+sokusmıs: sokuşmuş
+böri: börü
+agzı: ağzı
+emsimis: acımış
+esen: esen (sağ)
+tükel: salim
+bolmıs: olmuş (kurtulmuş)
+ter: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+kan: han
+olurupan: [tahta] oturup
+ordu: ordu
+yapmıs: yapmış (devlet kurmuş)
+eli: eli (halkı)
+turmıs: durmuş
+tört: dört
+boluŋtakı: yandan
+edgüsi: iyisi
+uyurı: başarılısı
+terilipen: dirilip (toplanıp)
+meŋileyür: eğlenir
+bedizleyür: bezenir
+ter: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+oyma: oyma[cı]
+er: er
+oglanın: oğlunu
+kisisin: ailesini
+tutug: tutuk
+urupan: vurup (kapayıp)
+osiç: [koyunun] içini
+oygalı: oymaya
+barmıs: varmış
+oglın: oğlu
+kisisin: ailesi
+utuzmadok: zarar görmemiş
+yana: dönünce
+tokuz: dokuz
+on: on (doksan)
+bos: [başı] boş
+koñ: koyun
+utmıs: bulmuş
+oglı: oğlu
+yutuzı: eşi
+kop: hep
+ögirer: övünür
+tir: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+çıgañ: fakir
+er: er
+oglı: oğlu
+kazgançka: [para] kazanmaya
+barmıs: varmış
+yolı: yolu
+yaramıs: yaramış (kazanmış)
+ögire: övüne
+sebinü: sevine
+kelir: gelir
+tir: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+bars: pars
+keyik: geyik
+eŋke: -
+meŋke: avlamaya
+barmıs: varmış
+eŋin: -
+meŋin: avını
+bulmıs: bulmuş
+bulupan: bulup
+uyasıŋaru: yuvasına
+ögire: övüne
+sebinü: sevine
+kelir: gelir
+tir: der
+ança: anca
+biliŋ: bilin
+edgü: iyi
+ol: o
+bir: bir
+tabılku: gül
+yüz: yüz
+boltı: oldu
+yüz: yüz
+tabılku: gül
+mıŋ: bin
+boltı: oldu
+mıŋ: bin
+tabılku: gül
+tümen: tümen (onbin)
+boltı: oldu
+tir: der
+ança: anca
+biliŋler: bilin
+asıgı: faydası
+bar: var
+edgü: iyi
+ol: o
+kidizig: keçeyi
+subka: suya
+sokmıs: sokmuş
+takı: daha
+ur: vur
+katıgdı: katıca (sıkı)
+ba: bağla
+tii: der
+ança: anca
+biliŋler: bilin
+yablak: kötü
+ol: o
+kan: han
+süke: savaşa
+barmıs: varmış
+yagıg: yağıyı (düşmanı)
+sançmıs: saçmış (yenmiş)
+köçürü: göçüre
+konturu: kondura
+kelir: gelir (halkını yerleştirir)
+özi: özü
+süsi: erleri
+ögire: övüne
+sebinü: sevine
+ordusıŋaru: ordusuna (sarayına)
+kelir: gelir
+tir: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+er: er
+süke: savaşa
+barmıs: varmış
+yolta: yolda
+atı: atı
+armıs: armış (bitkin kalmış)
+er: er (adam)
+kugu: kuğu
+kuska: kuşa
+sokusmıs: sokuşmuş
+kugu: kuğu
+kus: kuş
+kanatıŋa: kanadına
+urupanın: vurup (bindirip)
+kalıyu: kalıp
+barıpan: varmış (gitmiş)
+ögiŋe: anasına
+kaŋıŋa: babasına
+tegürmis: götürmüş
+ögi: anası
+kaŋı: babası
+ögirer: övünür
+sebinür: sevinir
+tir: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+üküs: iyi
+atlıg: adlı (itibar)
+ögrünçüŋ: sevincin
+yok: yok
+kovı: kötü
+atlıg: adlı (itibarsızlık)
+korkınçıŋ: korkun
+yok: yok
+uçruglug: uçurukluk
+kutuŋ: kutun
+yok: yok
+tir: der
+ança: anca
+biliŋler: bilin
+añıg: çok
+yablak: kötü
+ol: o
+bir: bir
+karı: yaşlı
+öküzüg: öküzü
+belin: belini
+biçe: biçene [dek]
+kumursga: karınca
+yemis: yemiş
+kamsayu: kımıldaya-
+umatın: -madan
+turur: durur
+tir: der
+ança: anca
+biliŋler: bilin
+yablak: kötü
+ol: o
+kamıs: kamışlar
+ara: arasında
+kalmıs: kalmış
+teŋri: tanrının
+onamaduk: onamadığı
+avınçu: köle
+katun: kadın
+bolzun: olsun
+tir: der (kabullenir)
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+tıgıg: kıratı
+tertrü: çapraz
+kisemis: kişemiş (kösteklemiş)
+kamsayu: kımıldaya-
+umatın: -madan
+turur: durur
+tir: der
+ança: anca
+biliŋler: bilin
+yablak: kötü
+ol: o
+talım: talım
+orı: genç
+yarınça: okunun
+yasıçın: ucuyla
+yalım: yalçın
+kayag: kayalara
+yara: yara
+urupan: vurup (çizip)
+yalŋusun: yalnızın
+yorıyur: yürüyor
+tir: der
+antag: öyle
+alp: alp
+ermis: imiş
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+ürüŋ: ak
+esri: benekli
+ingek: inek
+buzagulaçı: buzağılayacak
+bolmıs: olmuş
+ölgey: ölüyorum
+men: ben
+timis: demiş
+ürüŋ: ak
+esri: erkek
+erkek: buzağı
+buzagu: getirmiş (doğurmuş)
+kelürmis: adaklığa
+ıdukluk: yarar
+yaragay: demiş
+ülügde: ölümden
+ozmıs: ozmuş
+tir: der
+ança: anca
+biliŋ: bilin
+edgü: iyi
+ol: o
+uzuntonlug: uzundonlu (kadın)
+idisin: kabını-
+ayakın: -kaçağını
+kodupan: koyup
+barmıs: varmış (gitmiş)
+yana: dönüp
+edgüti: iyice
+sakınmıs: sakınmış (düşünmüş)
+idisimte: kabımdan-
+ayakımta: -kacağımdan
+öŋi: ayrı
+kança: nasıl
+barır: varır (gider)
+men: ben
+tir: der
+yana: dönüp
+kelmis: gelmiş
+idisin: kabını
+ayakın: kacağını
+esen: esen (sağ)
+tükel: salim
+bolmıs: olmuş
+ögirer: övünür
+sebinür: sevinir
+tir: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+togan: doğan
+ögüz: nehir
+kusı: kuşu
+kuslayu: kuşlaya (avlanmaya)
+barmıs: varmış
+otru: karşıdan
+talım: talım
+kara: kara
+kus: kuş (kartal)
+kopupan: kopup
+barmıs: [doğan'a] varmış
+tir: der
+ança: anca
+biliŋler: bilin
+yablak: kötü
+ol: o
+togan: doğan
+kus: kuş
+teŋriden: tanrıdan (gökten)
+kudı: (gökten)
+tabısgan: tavşan
+tepen: bulup
+kapmıs: kapmış
+togan: doğan
+kus: kuşun
+tırŋakı: tırnağı
+soçulunmıs: sökülmüş
+yana: dönüp
+tıtınmıs: kaçmış
+togan: doğan
+kusuŋ: kuşun
+tırŋakı: tırnağı
+ügüsüpen: sökülü
+kalıyu: kalıp
+barmıs: varmış
+tabısgan: tavşan
+terisi: derisi
+üŋüsüpen: yırtılıp
+yügürü: yüğürü (koşa)
+barmıs: varmış (kaçmış)
+antag: öyle
+tir: der
+ança: anca
+biliŋler: bilin
+yabız: yavuz (kötü)
+ol: o
+keyik: geyik
+oglı: oğlu (yavrusu)
+men: ben
+t: otsuz otsuz
+subsuz: susuz
+kaltı: kaldım
+uyın: necek
+neçök: yürüyeyim (nasıl
+yorıyın: yaşayayım)
+tir: der
+ança: anca
+biliŋler: bilin
+yabız: yavuz (çetin/kötü)
+ol: o
+tebe: deve
+titigke: batağa
+tüsmis: düşmüş
+basınu: umursamadan
+yemis: yemiş
+özin: özünü (onu da)
+tilkü: tilki
+yemis: yemiş
+tir: der
+ança: anca
+biliŋler: bilin
+yablak: kötü
+ol: o
+er: er
+ümeleyü: misafirliğe
+barmıs: varmış
+teŋrike: tanrıya
+sokusmıs: sokuşmuş
+kut: kut
+kolmıs: dilemiş
+kut: [tanrı] kut
+bermis: vermiş:
+agılıŋta: ağılında
+yılkıŋ: yılkın (at sürün)
+bolzun: olsun
+özüŋ: özün
+uzun: [ömrün] uzun
+bolzun: olsun
+timis: demiş
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+karı: yaşlı
+yol: yol
+teŋri: tanrısı
+men: ben
+sınukıŋın: sınıkı (kırıkları)
+sapar: onarır
+men: ben
+üzükiŋin: çıkıkları
+ulayur: ular (ekler)
+men: ben
+elig: eli (halkı)
+etmis: [iyi] etmiş
+men: ben
+edgüsi: iyisi
+bolzun: olsun
+tir: der
+ança: anca
+biliŋler: bilin
+bars: pars
+keyik: geyik
+eŋleyü: meŋleyü avlamaya
+barmıs: varmış
+ortu: orta
+yerde: yerde
+amgaka: keçiye
+sokusmıs: sokuşmuş
+esri: alaca
+amga: keçi
+yalım: yalçın
+kayaka: kayaya
+ünüp: çıkıp
+barmıs: varmış
+ölümte: ölümden
+ozmıs: ozmuş
+ölümte: ölümden
+ozupan: ozup
+ögire: övüne
+sebinü: sevine
+yorıyur: yürüyor (yaşıyor)
+tir: der
+ança: anca
+biliŋ: bilin
+edgü: iyi
+ol: o
+tıg: kır
+at: atı
+kudrukın: kuyruğunu
+tügüp: düğü[mleyi]p
+tigret: çatlayıncaya
+yazıg: koştur
+kudı: yağız
+yadrat: atı
+tokuz: dokuz
+kat: kat
+üçürgüŋ: keçesi
+topulgınça: yırtılıncaya
+teritzün: terletsin
+tir: der
+ança: anca
+biliŋler: bilin
+yablak: kötü
+ol: o
+talım: talım
+kara: kara
+kus: kuş (kartal)
+men: ben
+yasıl: yeşil
+kaya: kaya
+yaylagım: yazlığım
+kızıl: kızıl
+kaya: kaya
+kıslagım: kışlağım
+ol: o
+tagda: dağda
+turupan: durup
+meŋileyür: keyiflenir
+men: ben
+ança: anca
+biliŋler: bilin
+er: er (adam)
+bususlug: kederli
+teŋri: tanrı (gök)
+bulıtlıg: bulutlu
+bulıt: bulut
+ara: arasında
+kün: gün
+togmıs: doğmuş
+busanç: dertler
+ara: arasında
+meŋi: keyif
+kelmis: gelmiş
+tir: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+boz: boz
+bulıt: bulut
+yorıdı: yürüdü
+bodun: boyun (halkın)
+üze: üze(rine)
+yagdı: yağdı
+kara: kara
+bulıt: bulut
+yorıdı: yürüdü
+kamag: kamu (hepsi)
+üze: üzerine
+yagdı: yağdı
+tarıg: ekinler
+bisdi: pişti (erdi)
+yas: yaş
+ot: ot
+ündi: türedi
+yılkıka: yılkıya (at sürüsüne)
+kisike: kişiye
+edgü: iyi
+boltı: oldu
+tir: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+kul: kul
+sabı: savı (sözü)
+begiŋerü: beyine
+ötünür: ötünür (anlatır)
+kuzgun: kuzgun
+sabı: savı
+teŋrigerü: tanrıya
+yalvarur: yalvarır
+üze: üstte
+teŋri: tanrı
+esidti: işitti
+asra: altta
+kisi: kişi
+bilti: bildi
+tir: der
+ança: anca
+biliŋ: bilin
+edgü: iyi
+ol: o
+alp: alp
+er: er
+oglı: oğlu
+süke: savaşa
+barmıs: varmış
+sü: savaş
+yerinte: yerinde
+erklig: erkli (güçlü)
+sabçı: söz
+törütmis: türetmiş (ün salmış)
+tir: der
+ebiŋerü: evine
+kelser: gelse
+özi: özü
+atanmıs: ünlenmiş
+ögrünçülüg: övünçlü
+atı: atı
+yetiglig: yetkin
+kelir: gelir
+tir: der
+ança: anca
+biliŋler: bilin
+añıg: çok
+edgü: iyi
+ügüriŋe: sürüsüne
+kutlug: kutlu (mutlu)
+adgır: aygır
+men: ben
+yagak: ceviz
+ıgaç: ağacı
+yaylagım: yazlığım
+kuslug: kuşluk
+ıgaç: ağacı
+kıslagım: kışlağım
+anta: öyle
+turupan: durup (yaşayıp)
+meŋileyür: keyiflenir
+men: ben
+tir: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+kanıgı: sevdiği
+ölmis: ölmüş
+köŋeki: köneği (kovası)
+toŋmıs: donmuş
+kanıgı: sevdiği
+nelük: nasıl
+ölgey: ölür
+ol: o
+beglig: beydir
+ol: o
+köneki: köneği
+nelük: nasıl
+toŋgay: donar
+ol: o
+küneske: güneşde
+olurur: durur
+ol: o
+ança: anca
+biliŋler: bilin
+bu: bu
+ırk: falın
+basınta: başında
+az: az
+az: az (biraz)
+emgeki: emek (zorluk)
+bar: var
+eken: iken
+yana: dönüp
+edgü: iyi
+bolur: olur
+oglı: oğlu
+öginte: anasına
+kaŋınta: babasına
+öbkelepen: öfkelenip
+tezipen: tezip (kaçıp)
+barmıs: varmış (gitmiş)
+yana: dönüp
+sakınmıs: sakınmış (düşünmüş)
+kelmis: gelmiş
+ögüm: anamın
+ütin: öğüdünü
+alayın: alayım
+kaŋım: babamın
+sabın: savını (sözünü)
+tıŋlayın: dinleyeyim
+tep: deyip
+kelmis: gelmiş
+tir: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+yılka: yıla
+tegmisig: teğmişi (yıllık yiyeceği)
+yıdıtmayın: kokutmayın
+ayka: aya
+tegmisig: değmişi (aylık yiyeceği)
+artatmayın: çürütmeyin
+edgüsi: iyisi
+bolzun: olsun
+tir: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+tokuz: dokuz
+aralı: çatallı
+sıgun: boynuzlu
+keyik: geyik
+men: ben
+bedük: büyük
+tiz: dizlerim
+üze: üzerinde
+ünüpen: yükselip
+müŋreyür: böğürür
+men: ben
+üze: üstte
+teŋri: tanrı
+esidti: işitti
+asra: altta
+kisi: kişi
+bilti: bildi
+antag: öyle
+küçlüg: güçlü
+men: ben
+tir: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+turña: turna
+kus: kuşu
+tüsnekiŋe: tüneğine
+konmıs: konmuş
+tuymatın: duymadan (görememiş)
+tuzakka: tuzağa
+ilinmis: ilinmiş (takılmış)
+uça: uça-
+umatın: -madan
+olurur: oturur
+tir: der
+ança: anca
+biliŋler: bilin
+yablak: kötü
+ol: o
+yargun: yorgun
+keyik: geyik
+men: ben
+yaylag: yazlık
+tagıma: dağıma
+agıpan: ağıp (tırmanıp)
+yaylayur: yazlar
+turur: durur
+men: ben
+meŋilig: keyifli
+men: ben
+tir: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+kanlık: hanlık
+süsi: ordusu
+abka: ava
+ünmis: çıkmış
+sagır: avların
+içre: içine
+elik: erkek
+keyik: geyik
+kirmis: girmiş
+kan: han
+eligin: eliyle (geyiği)
+tutmıs: tutmuş
+kara: -
+kamag: tüm
+süsi: ordusu
+ögirer: övünür
+tir: der
+ança: anca
+biliŋler: bilin
+edgü: iyi
+ol: o
+kök: gök (boz)
+boymul: boyunlu
+togan: doğan
+kus: kuşu
+men: ben
+körüklüg: görkemli
+kayaka: kayaya
+konupan: konup
+közleyür: gözlüyor
+men: ben
+yagaklıg: cevizli
+tograk: ağaç
+üze: üzerine
+tüsüpen: düşüp (inip)
+yaylayur: yazlıyor
+men: ben
+tir: der
+ança: anca
+biliŋler: bilin
+añıg: çok
+edgü: iyi
+ol: o
+semiz: semiz
+at: at
+agzı: ağzı
+katıg: katı (hasta)
+boltı: oldu
+idisi: sahibi
+umaz: iyileşmez
+tir: der
+ança: anca
+biliŋler: bilin
+yablak: kötü
+ol: o
+amtı: şimdi
+amrak: sevgili
+oglanım: oğlum
+ança: anca
+biliŋler: bilin
+bu: bu
+ırk: fal
+bitig: kitabı
+edgü: iyi
+ol: o
+ançıp: ancak
+alku: herkes
+kentü: kendi
+ülügi: kaderinde
+erklig: erkli (hakim)
+ol: o
+bars: pars
+yıl: yılının
+ekinti: ikinci
+ay: ayın
+bes: beş-
+yegirmike: -yirmiye (on beşinde)
+taygüntan: taygün-tan
+manıstantakı: manastırındaki
+kiçig: küçük
+dentar: keşiş
+burua: burua
+guru: guruyu (hocayı)
+esidip: işitip
+eçimiz: ağabeyimiz
+isig: sevgili
+saŋun: sangun
+itaçuk: itaçuk
+üçün: için
+bitidim: bitidim (yazdım)
