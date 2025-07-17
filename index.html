@@ -315,7 +315,7 @@
               li.classList.add('word-item');
               li.innerHTML = `
                 <span class='dot ${entry.color}'></span>
-                <span class='text-content'><b>${word}</b> ${entry.meaning}</span>
+                <span class='text-content'>:<b>${word}</b> ${entry.meaning}</span>
               `;
               li.addEventListener('click', () => {
                 if (!excludedFilters.includes(entry.file)) {
