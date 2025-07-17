@@ -310,7 +310,7 @@
           dictionary[word].forEach(entry => {
             if (excludedFilters.includes(entry.file)) return;
             let searchField = searchByMeaning ? entry.meaning.toLowerCase() : word.toLowerCase();
-            if (searchField.match(new RegExp(normalizedQuery)) && count < 50) {
+            if (searchField.match(new RegExp(normalizedQuery)) && count < 50000) {
               const li = document.createElement('li');
               li.classList.add('word-item');
               li.innerHTML = `
