@@ -237,7 +237,7 @@
           text.split('\n').forEach(line => {
             let [word, meaning] = line.split(':');
             if (word && meaning) {
-              const key = word.trim() + ':';
+              const key = ':' + word.trim() + ':';
               if (!dictionary[key]) {
                 dictionary[key] = [];
               }
